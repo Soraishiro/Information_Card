@@ -145,9 +145,7 @@
 </head>
 
 <body>
-    <audio autoplay>
-        <source src="Ahead of Us.mp3">
-    </audio>
+    <audio id="bgmusic" src="Ahead of Us.mp3" autoplay loop></audio>
     <main class="mt-40">
         <div class="card">
             <!-- Left Column -->
@@ -182,5 +180,13 @@
         </div>
     </main>
 </body>
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById("bgmusic");
+    audio.pause();
+    audio.currentTime = 0;
+    audio.play();
+    });
+</script>
 
 </html>
