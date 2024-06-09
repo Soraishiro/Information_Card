@@ -51,7 +51,6 @@
             align-self: flex-start;
         }
 
-        /* Media query for screens larger than 768px */
         @media (min-width: 768px) {
             body {
                 flex-direction: row;
@@ -106,7 +105,7 @@
 
         @media (min-width: 768px) {
             .right-column {
-                width: calc(100% - 280px); /* Subtract the max-width of the left column */
+                width: calc(100% - 280px);
             }
         }
 
@@ -115,7 +114,7 @@
         }
         
         .right-column .spotify-player {
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: transparent;
             backdrop-filter: blur(5px);
             align-self: center;
             width: 100%;
